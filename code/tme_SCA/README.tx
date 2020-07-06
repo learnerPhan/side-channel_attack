@@ -1,0 +1,16 @@
+Ce dossier comporte deux sous dossiers :
+ * code_multithread
+ * code_sequentiel
+
+ ** Pour l'execution avec multi-threading :
+     * Pour faire une test sur dpa attaque -> make dpaAttack
+     * Pour faire une test sur cpa attaque -> make cpaAttack
+
+    [!!] Il est possible qu'il faille remplacer -pthread par -lpthread dans makefile
+
+ ** Pour l'execution du sequentiel :
+    * Il est nécessaire d'indiquer un fichier de traces mes_traces.csv à l'executable main
+    * l'attaque CPA suivra l'attaque DPA
+    * Un nouveau dossier sera générer contenant deux sous-dossiers :
+         *** dpa_mes_traces : dans lequel vous trouverez les graphes pour DPA
+         *** cpa_mes_traces : dans lequel vous trouverez les graphes pour CPA
